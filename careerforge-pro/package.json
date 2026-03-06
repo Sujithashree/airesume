@@ -1,0 +1,11 @@
+{
+  "name": "careerforge-pro",
+  "version": "1.0.0",
+  "description": "AI Resume Architect & Job Matcher",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start-backend": "cd backend && npm run dev",
+    "start-frontend": "cd frontend && npm start",
+    "build-frontend": "cd frontend && npm run build"
+  }
+}

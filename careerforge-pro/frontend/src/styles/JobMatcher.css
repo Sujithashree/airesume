@@ -1,0 +1,268 @@
+/* Job Matcher Styles */
+.job-matcher-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.matcher-header {
+  margin-bottom: 40px;
+}
+
+.matcher-header h1 {
+  font-size: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.matcher-header p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.matcher-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .matcher-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.matcher-section {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.matcher-section h2 {
+  font-size: 22px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.add-job form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-job .form-group {
+  margin-bottom: 20px;
+}
+
+.jobs-list {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.job-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%) 1;
+  transition: all 0.3s;
+}
+
+.job-card:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+  transform: translateX(5px);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.job-header h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.company-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.job-details {
+  margin-bottom: 15px;
+}
+
+.job-details .description {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.keywords {
+  margin-bottom: 10px;
+}
+
+.keywords strong {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.keyword-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.keyword-tag {
+  background: white;
+  color: #1a5490;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  border: 1px solid #1a5490;
+}
+
+.match-score {
+  margin: 15px 0;
+}
+
+.score-bar {
+  width: 100%;
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.score-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b6b, #f0ad4e, #28a745);
+}
+
+.match-score p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.match-results {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.match-results h2 {
+  color: #1a5490;
+  margin-bottom: 20px;
+}
+
+.results-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.match-score-large {
+  font-size: 64px;
+  font-weight: 700;
+  color: #1a5490;
+  margin-bottom: 10px;
+}
+
+.results-card > p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.suggestions {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.suggestions h3 {
+  color: #1a5490;
+  margin-bottom: 15px;
+}
+
+.suggestions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.suggestions li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #555;
+}
+
+.suggestions li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.matched-keywords {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.matched-keywords h3 {
+  color: #1a5490;
+  margin-bottom: 15px;
+}
+
+.keyword-tag-matched {
+  background: #d4edda;
+  color: #155724;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid #c3e6cb;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .matcher-grid {
+    grid-template-columns: 1fr;
+  }
+}
