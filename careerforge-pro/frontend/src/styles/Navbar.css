@@ -1,10 +1,18 @@
 /* Navbar Styles */
 .navbar {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffdd57 25%, #28a745 50%, #667eea 75%, #764ba2 100%);
+  background-size: 400% 400%;
+  animation: navbarRainbow 20s ease infinite;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+@keyframes navbarRainbow {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
 }
 
 .navbar-container {
