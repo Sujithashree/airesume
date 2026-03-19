@@ -13,7 +13,7 @@
 
 .dashboard-header h1 {
   font-size: 40px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-rainbow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -37,15 +37,12 @@
 }
 
 .dashboard-card {
-  background: white;
+  background: var(--gradient-light);
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   text-align: center;
-  border-top: 3px solid transparent;
-  background-image: linear-gradient(white, white), linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-origin: padding-box, border-box;
-  background-clip: padding-box, border-box;
+  border-top: 4px solid var(--accent-color);
   transition: all 0.3s ease;
 }
 
@@ -66,7 +63,7 @@
 .stat-number {
   font-size: 48px;
   font-weight: 700;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-rainbow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,10 +103,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: var(--gradient-light);
   border-radius: 10px;
-  border-left: 4px solid transparent;
-  border-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%) 1;
+  border-left: 4px solid var(--info-color);
   transition: all 0.3s;
 }
 
@@ -127,8 +123,8 @@
 
 .status-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: var(--accent-color);
+  color: var(--dark-color);
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 12px;
