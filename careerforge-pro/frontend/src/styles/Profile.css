@@ -13,7 +13,7 @@
 
 .profile-header h1 {
   font-size: 40px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-rainbow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -28,10 +28,11 @@
 }
 
 .profile-card {
-  background: white;
+  background: var(--gradient-light);
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  border-top: 4px solid var(--accent-color);
 }
 
 .profile-form {
@@ -51,7 +52,7 @@
 
 .form-section h2 {
   font-size: 22px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--gradient-rainbow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -85,7 +86,7 @@
 }
 
 .info-row strong {
-  color: #1a5490;
+  color: var(--accent-color);
   font-weight: 600;
 }
 
